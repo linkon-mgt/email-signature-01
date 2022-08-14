@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Signature</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .left-part {
+            border-right: 3px solid #fec700;
+        }
+
+        .circle {
+            height: 140px;
+            width: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            z-index: 99;
+
+        }
+
+        .circle img {
+            height: 140px;
+            width: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top left;
+            border: 3px solid #fec700;
+        }
+
+        .name {
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+            color: #dadada;
+            font-weight: 700;
+            padding-bottom: 5px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .designation {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            color: #dadada;
+            font-weight: 500;
+            padding-bottom: 10px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        .first-icon {
+            transform: scale(.7);
+            margin-right: 10px;
+            cursor: pointer;
+            margin-left: 15px;
+        }
+
+        .content {
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            color: #00CCB8;
+            font-weight: 400;
+        }
+
+        .last-icon {
+            display: inline-block;
+            margin: 15px 8px 0 8px;
+        }
+
+        .main-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        @media(min-width:361px) and (max-width:435px) {
+
+
+            .circle {
+                height: 120px;
+                width: 120px;
+            }
+
+            .circle img {
+                height: 120px;
+                width: 120px;
+            }
+
+            .name {
+                font-size: 22px;
+            }
+
+            .designation {
+                font-size: 17px;
+            }
+
+            .left-part {
+                padding: 10px !important;
+            }
+
+            .first-icon {
+                margin-right: 5px;
+                margin-left: 8px;
+            }
+
+            .content {
+                font-size: 12px;
+            }
+        }
+
+        @media(max-width:360px) {
+            .circle {
+                height: 80px;
+                width: 80px;
+            }
+
+            .circle img {
+                height: 80px;
+                width: 80px;
+            }
+
+            .name {
+                font-size: 18px;
+            }
+
+            .designation {
+                font-size: 14px;
+            }
+
+            .first-icon {
+                margin-right: 5px;
+                margin-left: 8px;
+            }
+            .left-part {
+                padding:7px !important;
+            }
+            .content {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <table cellspacing="0" ,cellpadding="0" ,border="0"
+        style="max-width: 500px; background-color:#4C3575;padding: 15px;box-sizing: border-box;border-radius:5px;">
+        <tr>
+            <td style="max-width: 180px; position: relative;">
+                <table cellspacing="0" ,cellpadding="0" ,border="0" style="padding: 15px;box-sizing: border-box;"
+                    class="left-part">
+                    <tr>
+                        <td class="circle">
+                            <img src="https://i.ibb.co/L8zLDgt/profile.jpg" alt="profile" border="0">
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+            <td style="max-width: 320px;position: relative;">
+                <table cellspacing="0" ,cellpadding="0" ,border="0">
+                    <tr>
+                        <td>
+                            <h3 class="name">Linkon khan</h3>
+                            <h5 class="designation">web designer</h5>
+                            <p class="main-item"><img class="first-icon" src="https://i.ibb.co/Nxnm8Q6/telephone.png"
+                                    alt="telephone" border="0"><a href="tel:+8801752022232"
+                                    class="content">+8801752022232</a></p>
+                            <p class="main-item"><img class="first-icon" src="https://i.ibb.co/9YhN3Dj/email.png"
+                                    alt="email" border="0"><a href="mailto:linkonkhan.dcbd@gmail.com"
+                                    class="content">linkonkhan.dcbd@gmail.com</a></p>
+                            <p class="main-item"><img class="first-icon" src="https://i.ibb.co/F52ZLmn/web-link.png"
+                                    alt="web-link" border="0"><a href="https://github.com/linkon-mgt"
+                                    class="content">www.linkon.com</a></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center">
+                            <a class="last-icon" href="https://www.facebook.com/linkonkhan.mgt/"><img
+                                    src="https://i.ibb.co/Br5jg75/facebook.png" alt="facebook" border="0"></a>
+                            <a class="last-icon" href="https://github.com/linkon-mgt"><img
+                                    src="https://i.ibb.co/ypYBnTp/github.png" alt="github" border="0"></a>
+                            <a class="last-icon" href="https://www.linkedin.com/in/linkon-dev/"><img
+                                    src="https://i.ibb.co/N7P1gL3/linkedin.png" alt="linkedin" border="0"></a>
+                            <a class="last-icon" href="https://twitter.com/linkonkhanmgt"><img
+                                    src="https://i.ibb.co/Hr1CmyS/twitter.png" alt="twitter" border="0"></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
